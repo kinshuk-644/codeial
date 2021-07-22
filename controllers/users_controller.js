@@ -1,9 +1,24 @@
 const User = require("../models/user");
 
 module.exports.profile = function(req,res){
-    return res.render('user_profile', {
-        title: "User Profile"
-    });
+    if(req.cookies.user_id){
+        User.findById(req.cookies.user_id, function(err,user){
+            if(user){
+                return res.render('user_profile.ejs',{
+                    title: "User Profile",
+                    user: user
+                });
+            }
+
+            else{
+                return res.redirect("/users/sign-in");
+            }
+        });
+    }
+
+    else{
+        return res.redirect("/users/sign-in");
+    }
 };
 
 // render the sign up page 
@@ -18,6 +33,12 @@ module.exports.signIn = function(req,res){
     return res.render('user_sign_in', {
         title: "Codeial | Sign In"
     })
+};
+
+module.exports.signOut = function(req,res){
+    res.clearCookie('user_id');
+
+    return res.redirect('/users/sign-in');
 };
 
 // get the sign up data 
