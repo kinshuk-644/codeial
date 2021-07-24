@@ -1,4 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #333233; }
   body #layout-main {
     height: 100%; }

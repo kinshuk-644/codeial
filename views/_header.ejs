@@ -1,27 +1,27 @@
 <header>
-    Page Header
+    <div id="logo-container">
+        <i class="fas fa-compact-disc"></i> <a href="/">Codeial</a>
+    </div>
 
-    <ul>
+    <div id="nav-container">
         <% if(locals.user){ %>
-
-            <li>
-                <a href="/users/profile"><%= user.name %></a>
-            </li>
-
-            <li>
+            <div>
+                <a style="display: flex;align-items: center;justify-content: center;" href="/users/profile">
+                    <img style="width: 28px;margin-right: 8px;" src="https://res.cloudinary.com/dilxqj69w/image/upload/v1627114103/5336880_oygcgf.png" alt="profile-icon">
+                    <%= user.name %></a>
+            </div>
+            
+            <div>
                 <a href="/users/sign-out">Sign Out</a>
-            </li>
-
+            </div>
         <% } else{ %>
-
-            <li>
-                <a href="/users/sign-in">Sign In</a>
-            </li>
-
-            <li>
+            <div>
+                <a href="/users/sign-in">LogIn</a>            
+            </div>
+            
+            <div>
                 <a href="/users/sign-up">Sign Up</a>
-            </li>
-
+            </div>
         <% } %>
-    </ul>
+    </div>
 </header>
