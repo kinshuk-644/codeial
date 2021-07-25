@@ -1,0 +1,157 @@
+#feed-posts{
+    display: flex;
+
+    #posts-container{
+        width: 70%;
+        border-right: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        font-family: sans-serif;
+        color: white;
+
+        h1{
+            font-size: 25px;
+            color: white;
+        }
+
+        form{
+            width: 100%;
+            position: relative;
+            text-align: center;
+
+            textarea{
+                width: 70%;
+                background-color: #22212188;
+                border: 2px solid lightgray;
+                border-radius: 20px;
+                font-size: 20px;
+                padding: 10px;
+                color: white;
+    
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            #post-btn{
+                width: 150px;
+                height: 50px;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-top: -25px;
+                margin-left: -75px;
+                background-color: black;
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px solid lightgray;
+                color: white;
+                font-weight: 700;
+                font-size: 22px;
+                cursor: pointer;
+                transition: background-color,color 0.3s ease-in;
+    
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+        #posts-list-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+
+            .post-container{
+                width: 80%;
+                border: 2px solid lightgray;
+                background-color: #22212188;
+                border-radius: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+
+                .post-header{
+                    font-size: 26px;
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .comments-container{
+                    border-top: 2px solid lightgray;
+                    text-align: center;
+
+                    .comments{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 120px;
+
+                        .comment{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            font-weight: 700;
+                            font-size: 18px;
+
+                            .comment-content{
+                                margin-left: 30px;
+                                word-break: break-all;
+                            }
+                        }
+                    }
+
+                    form{
+                        input{
+                            width: 350px;
+                            height: 50px;
+                            font-size: 20px;
+                            background-color: transparent;
+                            color: white;
+                            border: 2px solid lightgray;
+                            border-radius: 20px;
+                            padding: 9px;
+                            margin-left: -272px;
+
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+
+                        button{
+                            width: 150px;
+                            height: 50px;
+                            font-size: 20px;
+                            padding: 7px;
+                            background-color: black;
+                            color: white;
+                            margin-left: 10px;
+                            border: 2px solid lightgray;
+                            border-radius: 20px;
+                            font-weight: bold;
+
+                            &:hover{
+                                cursor: pointer;
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }        
+        
+    }
+
+    #users-container{
+        width: 30%;
+        border-left: 1px solid white;
+        padding-top: 20px;
+    }
+}
