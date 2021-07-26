@@ -22,7 +22,9 @@
                                                             &ensp;<p style="color: white;"><%= post.user.name %></p>
                                                     </div>
 
-                                                    <a style="color:rgb(231, 128, 128);" href=""><i class="far fa-times-circle"></i></a>
+                                                    <% if(locals.user && locals.user.id == post.user.id){ %>
+                                                    <a style="color:rgb(231, 128, 128);" href="/posts/destroy/<%= post.id %>"><i class="far fa-times-circle"></i></a>
+                                                    <% } %>
                                             </div>
 
                                             <p><%= post.content %></p>
