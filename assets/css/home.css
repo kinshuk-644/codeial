@@ -103,7 +103,8 @@
             margin-left: 10px;
             border: 2px solid lightgray;
             border-radius: 20px;
-            font-weight: bold; }
+            font-weight: bold;
+            transition: background-color,color 0.3s ease-in; }
             #feed-posts #posts-container #posts-list-container .post-container .comments-container form button:hover {
               cursor: pointer;
               background-color: white;

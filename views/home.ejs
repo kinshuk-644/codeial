@@ -35,12 +35,17 @@
                                                     <div class="comments">
                                                         <% for(comment of post.comments){ %>
                                                                <div class="comment">
+
                                                                        <img style="width: 32px;" src="https://res.cloudinary.com/dilxqj69w/image/upload/v1627114103/5336880_oygcgf.png" alt="comment-user-photo">
                                                                        &ensp;<span><%= comment.user.name %></span>
 
                                                                        <div class="comment-content">
                                                                         <%= comment.content %>                          
                                                                        </div>
+
+                                                                       <% if(locals.user && (locals.user.id == comment.user.id || locals.user.id == post.user.id )){ %>
+                                                                                <a style="color:rgb(231, 128, 128); margin-left: 10px;" href="/comments/destroy/<%= comment.id %>"><i class="far fa-times-circle"></i></a>
+                                                                       <% } %>
                                                                </div> 
 
                                                                <br>

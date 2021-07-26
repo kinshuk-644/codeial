@@ -134,6 +134,7 @@
                             border: 2px solid lightgray;
                             border-radius: 20px;
                             font-weight: bold;
+                            transition: background-color,color 0.3s ease-in;
 
                             &:hover{
                                 cursor: pointer;
