@@ -112,4 +112,24 @@
   #feed-posts #users-container {
     width: 30%;
     border-left: 1px solid white;
-    padding-top: 20px; }
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif; }
+    #feed-posts #users-container #friends-container {
+      border-bottom: 1px solid white; }
+      #feed-posts #users-container #friends-container h1 {
+        text-align: center; }
+      #feed-posts #users-container #friends-container #friends {
+        display: flex;
+        flex-direction: column; }
+    #feed-posts #users-container #all-users-container {
+      border-top: 1px solid white;
+      padding-top: 10px; }
+      #feed-posts #users-container #all-users-container h1 {
+        text-align: center; }
+      #feed-posts #users-container #all-users-container #all-users {
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+        padding-top: 20px; }

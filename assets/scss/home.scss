@@ -154,5 +154,40 @@
         width: 30%;
         border-left: 1px solid white;
         padding-top: 20px;
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+
+        #friends-container{
+            border-bottom: 1px solid white;
+
+            h1{
+                text-align: center;
+            }
+
+            #friends{
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        #all-users-container{
+            border-top: 1px solid white;
+            padding-top: 10px;
+
+            h1{
+                text-align: center;
+            }
+
+            #all-users{
+                display: flex;
+                flex-direction: column;
+                padding-left: 80px;
+                padding-top: 20px;
+
+            }
+
+        }
     }
 }

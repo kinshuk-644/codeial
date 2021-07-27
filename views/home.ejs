@@ -18,6 +18,30 @@
                 </div>
 
                 <div id="users-container">
+                        <div id="friends-container">
+                                <h1>FRIENDS</h1>
 
+                                <div id="friends">
+
+                                </div>
+                        </div>
+
+                        <div id="all-users-container">
+                                <h1>ALL USERS</h1>
+
+                                <div id="all-users">
+                                        <% for(u of all_users){ %>
+                                                <div class="user">
+                                                        <a style="display: flex;align-items: center;color: white;text-decoration: none;font-size: 25px;" href="/users/profile/<%= u.id %>">
+                                                                <img style="width: 45px;" src="https://res.cloudinary.com/dilxqj69w/image/upload/v1627114103/5336880_oygcgf.png" alt="user-photo">
+                                                                &ensp;<%= u.name %>
+                                                        </a>
+                                                </div>
+
+                                                <br>
+                                                <br>
+                                        <% } %>
+                                </div>
+                        </div>
                 </div>
         </section>
