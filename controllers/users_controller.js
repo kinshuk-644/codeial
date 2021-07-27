@@ -1,5 +1,6 @@
 const User = require("../models/user");
 
+// let's keep this not of async/await type since there is only 1 level of nesting
 module.exports.profile = function(req,res){
 
     User.findById(req.params.id, function(err, user){
