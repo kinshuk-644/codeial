@@ -58,7 +58,8 @@
         background-color: #22212188;
         border-radius: 20px;
         padding-left: 20px;
-        padding-right: 20px; }
+        padding-right: 20px;
+        margin-bottom: 70px; }
         #feed-posts #posts-container #posts-list-container .post-container .post-header {
           font-size: 26px;
           font-weight: bold;
@@ -77,7 +78,8 @@
               display: flex;
               align-items: center;
               font-weight: 700;
-              font-size: 18px; }
+              font-size: 18px;
+              margin-bottom: 15px; }
               #feed-posts #posts-container #posts-list-container .post-container .comments-container .comments .comment .comment-content {
                 margin-left: 30px;
                 word-break: break-all; }
