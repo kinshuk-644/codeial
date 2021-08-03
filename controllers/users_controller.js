@@ -1,4 +1,7 @@
 const User = require("../models/user");
+const fs = require("fs");
+const path = require("path");
+const { exists } = require("../models/user");
 
 // let's keep this not of async/await type since there is only 1 level of nesting
 module.exports.profile = function(req,res){
@@ -27,6 +30,11 @@ module.exports.update = async function(req, res){
                     user.email = req.body.email;
                 
                     if(req.file){
+                        // check if avatar already exists, if yes then first delete the prev avatar from storage 
+                        if(user.avatar && fs.existsSync(path.join(__dirname, '..', user.avatar))){
+                            fs.unlinkSync(path.join(__dirname, '..', user.avatar));
+                        }
+
                         // saves the path of the uploaded file into the avatar field of user in the db
                         user.avatar = User.avatarPath + '/' + req.file.filename;
                     }
