@@ -1,7 +1,6 @@
         <link rel="stylesheet" href="/css/user_profile.css">
-        <h1>
-                Codeial / Profile Page
-        </h1>
+
+        <img src="<%= user.avatar %>" alt="<%= user.name %>" width="100">
 
         <!-- if user matches then show the form to update data  -->
         <% if(user.id == profile_user.id){ %>
