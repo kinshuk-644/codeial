@@ -11,5 +11,6 @@ router.use('/posts', require("./posts"));
 router.use('/comments', require("./comments"));
 router.use('/api', require("./api"));
 router.use('/reset-password', require("./forgot_password"));
+router.use('/likes', require("./likes"));
 
 module.exports = router;
