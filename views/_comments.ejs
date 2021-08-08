@@ -10,4 +10,16 @@
     <% if(locals.user && (locals.user.id == comment.user.id || locals.user.id == post.user.id )){ %>
              <a class="delete-comment-button" style="color:rgb(231, 128, 128); margin-left: 10px;" href="/comments/destroy/<%= comment.id %>"><i class="far fa-times-circle"></i></a>
     <% } %>
+
+    <!--display the likes of this comment, if the user is logged in, then show the link to toggle likes, else, just show the count -->
+    <br>
+    <small>
+            <% if (locals.user){ %>
+                    <a class="toggle-like-button" data-likes="<%= comment.likes.length %>" href="/likes/toggle/?id=<%=comment._id%>&type=Comment">
+                    <%= comment.likes.length %> Likes
+                    </a>
+            <% }else{ %>
+                    <%= comment.likes.length %> Likes
+            <% } %>
+    </small>
 </div>
