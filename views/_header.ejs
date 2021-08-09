@@ -7,7 +7,7 @@
         <% if(locals.user){ %>
             <div>
                 <a style="display: flex;align-items: center;justify-content: center;" href="/users/profile/<%= user.id %>">
-                    <img style="width: 32px;margin-right: 8px;" src="https://res.cloudinary.com/dilxqj69w/image/upload/v1627114103/5336880_oygcgf.png" alt="profile-icon">
+                    <img style="width: 32px;margin-right: 8px;" src="<%= user.avatar %>" alt="profile-icon">
                     &ensp;<%= user.name %></a>
             </div>
             

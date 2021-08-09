@@ -33,7 +33,7 @@
                                         <% for(u of all_users){ %>
                                                 <div class="user">
                                                         <a style="display: flex;align-items: center;color: white;text-decoration: none;font-size: 25px;" href="/users/profile/<%= u.id %>">
-                                                                <img style="width: 45px;" src="https://res.cloudinary.com/dilxqj69w/image/upload/v1627114103/5336880_oygcgf.png" alt="user-photo">
+                                                                <img style="width: 45px;" src="<%= u.avatar %>" alt="user-photo">
                                                                 &ensp;<%= u.name %>
                                                         </a>
                                                 </div>
