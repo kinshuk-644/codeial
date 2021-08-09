@@ -21,9 +21,17 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
+
     avatar: {
         type: String
-    }
+    },
+
+    friendships: [
+        {
+            type: mongoose.Schema.ObjectId,
+            ref: 'Friendship'
+        }
+    ]
 } , {
     timestamps: true
 });
