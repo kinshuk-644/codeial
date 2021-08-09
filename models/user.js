@@ -23,7 +23,8 @@ const userSchema = mongoose.Schema({
     },
 
     avatar: {
-        type: String
+        type: String,
+        default: '/uploads/users/avatars/avatar-default.png'
     },
 
     friendships: [
