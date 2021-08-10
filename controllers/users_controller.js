@@ -1,17 +1,37 @@
 const User = require("../models/user");
+const Friendship = require("../models/friendship");
 const fs = require("fs");
 const path = require("path");
 const { exists } = require("../models/user");
 
 // let's keep this not of async/await type since there is only 1 level of nesting
-module.exports.profile = function(req,res){
+module.exports.profile = async function(req,res){
+    try{
+        let user = await User.findById(req.params.id);
+        let are_friends_or_not = null;
 
-    User.findById(req.params.id, function(err, user){
+        let friendship = await Friendship.findOne({from_user: req.user._id, to_user: user._id});
+        let friendshipr = await Friendship.findOne({from_user: user._id, to_user: req.user._id});
+
+        if(friendship || friendshipr){
+            are_friends_or_not = true;
+        }
+        else{
+            are_friends_or_not = false;
+        }
+        
         return res.render('user_profile', {
             title: "User Profile",
-            profile_user: user
+            profile_user: user,
+            are_friends_or_not: are_friends_or_not
         });
-    });
+        
+    }
+
+    catch(err){
+        console.log(err);
+        return res.redirect("back");
+    }
 };
 
 module.exports.update = async function(req, res){

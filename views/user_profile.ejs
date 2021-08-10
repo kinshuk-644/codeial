@@ -17,4 +17,18 @@
         <% } else{ %>
                 <p><%= profile_user.name %></p>
                 <p><%= profile_user.email %></p>
+                <% if(locals.are_friends_or_not){ %>
+                        <a class="toggle-friendship-button" href="http://localhost:3000/friendships/toggle-friendship/?to_user_id=<%= profile_user.id %>">Remove Friend</a>
+                <% }else{ %>
+                        <a class="toggle-friendship-button" href="http://localhost:3000/friendships/toggle-friendship/?to_user_id=<%= profile_user.id %>">Add Friend</a>
+                <% } %>
         <% } %>
+
+        <!-- import the script file for toggling friendships  -->
+        <script src="/js/toggle_friendship.js"></script>
+        <script>
+        $('.toggle-friendship-button').each(function(){
+                let self = this;
+                let toggleFriendship = new ToggleFriendship(self);
+        });
+        </script>
