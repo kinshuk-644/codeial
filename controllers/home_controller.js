@@ -49,10 +49,39 @@ module.exports.home = async function(req,res){
 
         let users = await User.find({});
 
+        let friends = [];
+
+        if(req.user){
+            let cur_user = await User.findById(req.user.id)
+            .populate({
+                path: 'friendships',
+                populate: {
+                    path: 'from_user'
+                }
+            })
+            .populate({
+                path: 'friendships',
+                populate: {
+                    path: 'to_user'
+                },
+            });
+
+            for(let i of cur_user.friendships){
+            // .id is for string and ._id is for object , this is very important else errors can occur
+                if(i.from_user.id == cur_user.id){
+                    friends.push(i.to_user);
+                }
+                else{
+                    friends.push(i.from_user);
+                }
+            }
+        }
+
         return res.render('home',{
             title: "Codeial | Home",
             posts: posts,
-            all_users: users
+            all_users: users,
+            friends: friends
         });
     }
 

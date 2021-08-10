@@ -22,7 +22,17 @@
                                 <h1>FRIENDS</h1>
 
                                 <div id="friends">
+                                        <% for(let f of friends){ %>
+                                                <div class="user">
+                                                        <a style="display: flex;align-items: center;color: white;text-decoration: none;font-size: 25px;" href="/users/profile/<%= f.id %>">
+                                                                <img style="width: 45px;" src="<%= f.avatar %>" alt="user-photo">
+                                                                &ensp;<%= f.name %>
+                                                        </a>
+                                                </div>
 
+                                                <br>
+                                                <br>
+                                        <% } %>
                                 </div>
                         </div>
 
@@ -30,7 +40,7 @@
                                 <h1>ALL USERS</h1>
 
                                 <div id="all-users">
-                                        <% for(u of all_users){ %>
+                                        <% for(let u of all_users){ %>
                                                 <div class="user">
                                                         <a style="display: flex;align-items: center;color: white;text-decoration: none;font-size: 25px;" href="/users/profile/<%= u.id %>">
                                                                 <img style="width: 45px;" src="<%= u.avatar %>" alt="user-photo">
