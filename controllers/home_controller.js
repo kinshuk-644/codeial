@@ -42,10 +42,6 @@ module.exports.home = async function(req,res){
             path: 'comments',
             populate: {
                 path: 'user'
-            },
-            // populate the likes of every comment on the home page 
-            populate: {
-                path: 'likes'
             }
         })
         // populate the likes of every post on the home page 
