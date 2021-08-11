@@ -9,10 +9,18 @@ const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
 const passportJWT = require("./config/passport-jwt-strategy");
 const passportGoogle = require("./config/passport-google-oauth-strategy");
+
 const MongoStore = require("connect-mongo");
 const sassMiddleware = require("node-sass-middleware");
 const flash = require("connect-flash");
 const customMware = require("./config/middleware");
+const { Socket } = require("dgram");
+
+// setup the chat server to be used with Socket.io 
+const chatServer = require("http").Server(app);
+const chatSockets = require("./config/chat_sockets").chatSockets(chatServer);
+chatServer.listen(5000);
+console.log("chat server is listening on port 5000");
 
 const port = 3000;
 
