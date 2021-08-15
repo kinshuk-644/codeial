@@ -1,3 +1,24 @@
 # codeial
 
 A basic social media web application with features such as Sign Up, Sign In, Profile Page, Add Post, Add Comment, Delete Post, Delete Comment.
+
+# Steps to run the project :
+Make sure you have node.js , mongoDB , Robo 3T(optional , to visualize the schema) installed on your pc.
+
+Open an editor (VS Code preferably).
+
+Run the following commands inside the todoApp directory:
+
+1) npm install
+
+Run the command on terminal to start mongoDB:
+
+1) sudo systemctl start mongod
+
+Run the command on terminal to see the status of mongoDB(active or not)
+
+Go back to VS Code and run:
+
+1) npm start
+
+Finally, open localhost:3000/ on your web browser.
