@@ -15,7 +15,9 @@ Run the command on terminal to start mongoDB:
 
 1) sudo systemctl start mongod
 
-Run the command on terminal to see the status of mongoDB(active or not)
+Run the command on terminal to see the status of mongoDB(active or not):
+
+1) sudo systemctl status mongod
 
 Go back to VS Code and run:
 
