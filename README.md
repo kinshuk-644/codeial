@@ -13,14 +13,14 @@ Run the following commands inside the todoApp directory:
 
 Run the command on terminal to start mongoDB:
 
-1) sudo systemctl start mongod
+2) sudo systemctl start mongod
 
 Run the command on terminal to see the status of mongoDB(active or not):
 
-1) sudo systemctl status mongod
+3) sudo systemctl status mongod
 
 Go back to VS Code and run:
 
-1) npm start
+4) npm start
 
 Finally, open localhost:3000/ on your web browser.
