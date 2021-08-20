@@ -7,7 +7,7 @@ Make sure you have node.js , mongoDB , Robo 3T(optional , to visualize the schem
 
 Open an editor (VS Code preferably).
 
-Run the following commands inside the todoApp directory:
+Run the following commands inside the todoApp directory to install all the dependencies of the project:
 
 1) npm install
 
