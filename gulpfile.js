@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 
 // to convert sass into css 
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 
 // to compress css files 
 const cssnano = require("gulp-cssnano");
@@ -12,7 +12,7 @@ const rev = require("gulp-rev");
 gulp.task('css', function(){
     console.log("Minifying css...");
 
-    gulp.src('./assets/scss/**/*.scss')
+    gulp.src('./assets/sass/**/*.scss')
     .pipe(sass())
     .pipe(cssnano())
     .pipe(gulp.dest('./assets.css'));
