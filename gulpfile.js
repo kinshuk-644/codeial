@@ -10,7 +10,7 @@ const cssnano = require("gulp-cssnano");
 const rev = require("gulp-rev");
 
 // to minify js files
-const uglify = require("gulp-uglify-es");
+const uglify = require("gulp-uglify-es").default;
 
 gulp.task('css', function(done){
     console.log("Minifying css...");
