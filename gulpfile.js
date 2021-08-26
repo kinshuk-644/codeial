@@ -14,6 +14,7 @@ const uglify = require("gulp-uglify-es").default;
 
 // to minify images 
 const imagemin = require("gulp-imagemin"); 
+const del = require("del");
 
 gulp.task('css', function(done){
     console.log("Minifying css...");
@@ -66,5 +67,11 @@ gulp.task('images', function(done){
     }))
     .pipe(gulp.dest('./public/assets'));
 
+    done();
+});
+
+// empty the public/assets directory initially 
+gulp.task('clean:assets', function(done){
+    del.sync('./public/assets');
     done();
 });
