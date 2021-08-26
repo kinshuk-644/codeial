@@ -12,6 +12,9 @@ const rev = require("gulp-rev");
 // to minify js files
 const uglify = require("gulp-uglify-es").default;
 
+// to minify images 
+const imagemin = require("gulp-imagemin"); 
+
 gulp.task('css', function(done){
     console.log("Minifying css...");
 
@@ -37,6 +40,24 @@ gulp.task('js', function(done){
 
     gulp.src('./assets/**/*.js')
     .pipe(uglify())
+    .pipe(rev())
+    .pipe(gulp.dest('./public/assets'))
+    .pipe(rev.manifest({
+        cwd: 'public',
+        merge: true
+    }))
+    .pipe(gulp.dest('./public/assets'));
+
+    done();
+});
+
+gulp.task('images', function(done){
+    console.log("Compressing images...");
+
+    gulp.src('./assets/**/*.+(png|jgp|gif|svg|jpeg)')
+    .pipe(imagemin({
+        progressive: true
+    }))
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
     .pipe(rev.manifest({
