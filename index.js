@@ -3,6 +3,8 @@ const env = require("./config/environment");
 const logger = require("morgan");
 const cookieParser = require("cookie-parser");
 const app = express();
+require("./config/view-helpers")(app);
+
 const expressLayout = require("express-ejs-layouts");
 const db = require("./config/mongoose");
 // used for session-cookie
