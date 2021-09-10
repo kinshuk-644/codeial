@@ -19,8 +19,13 @@ Run the command on terminal to see the status of mongoDB(active or not):
 
 3) sudo systemctl status mongod
 
-Go back to VS Code and run:
+Go back to VS Code and use the below command to run development mode:
 
 4) npm start
+
+
+Use the below command to run production mode:
+
+4) npm run prod_start
 
 Finally, open localhost:3000/ on your web browser.
