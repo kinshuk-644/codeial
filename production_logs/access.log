@@ -1635,3 +1635,60 @@
 ::1 - - [10/Sep/2021:08:40:13 +0000] "GET / HTTP/1.1" 200 6262 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
 ::1 - - [10/Sep/2021:08:40:14 +0000] "GET /users/profile/61263c5de017ac231857159d HTTP/1.1" 200 3162 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
 ::1 - - [10/Sep/2021:08:40:18 +0000] "GET /users/profile/61263c5de017ac231857159d HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:30 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:33 +0000] "POST /posts/create HTTP/1.1" 200 267 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:35 +0000] "GET /users/profile/613b0a2bc9641a4eb95e5550 HTTP/1.1" 200 2853 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:36 +0000] "GET /friendships/toggle-friendship/?to_user_id=613b0a2bc9641a4eb95e5550 HTTP/1.1" 200 57 "http://localhost:3000/users/profile/613b0a2bc9641a4eb95e5550" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:39 +0000] "GET / HTTP/1.1" 200 9061 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:43 +0000] "POST /comments/create HTTP/1.1" 200 322 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:44 +0000] "POST /likes/toggle/?id=613b281145631172178ac5cd&type=Post HTTP/1.1" 200 57 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:45 +0000] "POST /likes/toggle/?id=613b281b45631172178ac5e7&type=Comment HTTP/1.1" 200 57 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:47 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:47 +0000] "GET / HTTP/1.1" 200 7220 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:48 +0000] "GET /users/sign-in HTTP/1.1" 200 2163 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:52 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:52 +0000] "GET / HTTP/1.1" 200 9893 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:56 +0000] "GET /users/profile/61263c5de017ac231857159d HTTP/1.1" 200 2871 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:40:59 +0000] "POST /likes/toggle/?id=613b281145631172178ac5cd&type=Post HTTP/1.1" 200 57 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:02 +0000] "GET /users/profile/61263c5de017ac231857159d HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:03 +0000] "GET /friendships/toggle-friendship/?to_user_id=61263c5de017ac231857159d HTTP/1.1" 200 56 "http://localhost:3000/users/profile/61263c5de017ac231857159d" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:10 +0000] "POST /likes/toggle/?id=613b281145631172178ac5cd&type=Post HTTP/1.1" 200 56 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:11 +0000] "POST /likes/toggle/?id=613b281145631172178ac5cd&type=Post HTTP/1.1" 200 57 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:14 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:14 +0000] "GET / HTTP/1.1" 200 7220 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:15 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:19 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:20 +0000] "GET / HTTP/1.1" 200 9536 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:29 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:30 +0000] "GET / HTTP/1.1" 200 7220 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:30 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:35 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:35 +0000] "GET / HTTP/1.1" 200 9125 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:38 +0000] "POST /likes/toggle/?id=613b281145631172178ac5cd&type=Post HTTP/1.1" 200 56 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:41 +0000] "GET /users/sign-out HTTP/1.1" 302 46 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:41 +0000] "GET / HTTP/1.1" 200 7220 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:42 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:44 +0000] "GET / HTTP/1.1" 200 6957 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:46 +0000] "GET /users/sign-in HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:50 +0000] "POST /users/create-session HTTP/1.1" 302 46 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:50 +0000] "GET / HTTP/1.1" 200 9536 "http://localhost:3000/users/sign-in" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+::1 - - [10/Sep/2021:09:41:53 +0000] "GET /posts/destroy/613b281145631172178ac5cd HTTP/1.1" 200 72 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+[0mGET / [32m200[0m 60.205 ms - 16795[0m
+[0mGET /users/sign-in [32m200[0m 26.631 ms - 2130[0m
+[0mPOST /users/create-session [36m302[0m 12.715 ms - 46[0m
+[0mGET / [32m200[0m 35.457 ms - 19750[0m
+[0mGET /users/profile/60fea3edac5a3d1f8141078c [36m304[0m 26.023 ms - -[0m
+[0mGET /friendships/toggle-friendship/?to_user_id=60fea3edac5a3d1f8141078c [32m200[0m 40.431 ms - 56[0m
+[0mGET / [32m200[0m 45.624 ms - 18715[0m
+[0mPOST /likes/toggle/?id=6112517b0a325d33641b7f0a&type=Post [32m200[0m 25.937 ms - 57[0m
+[0mPOST /likes/toggle/?id=61129e1019f8ff7d01e56723&type=Comment [32m200[0m 34.151 ms - 57[0m
+[0mGET /users/sign-out [36m302[0m 7.975 ms - 46[0m
+[0mGET / [32m200[0m 21.365 ms - 17058[0m
+[0mGET /users/sign-in [36m304[0m 12.747 ms - -[0m
+[0mGET /users/auth/google [36m302[0m 10.617 ms - 0[0m
+[0mGET /users/auth/google/callback?code=4%2F0AX4XfWjrVG65dcQg8Kctvv83oiZGUYRobgdXDe98cPA1rqVgM6q2gjKttGZ2ilCCt67soA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 458.324 ms - 46[0m
+[0mGET / [32m200[0m 35.425 ms - 19382[0m
+[0mGET /posts/destroy/6112517b0a325d33641b7f0a [32m200[0m 16.429 ms - 72[0m
+[0mGET /users/sign-out [36m302[0m 6.762 ms - 46[0m
+[0mGET / [32m200[0m 15.828 ms - 15256[0m
+::1 - - [10/Sep/2021:09:44:22 +0000] "GET / HTTP/1.1" 200 5157 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
