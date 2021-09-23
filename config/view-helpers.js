@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = (app) => {
     app.locals.assetPath = function(filePath){
-        // console.log(filePath);
+        console.log(filePath);
         if(env.name == 'development'){
             return '/' + filePath;
         }
@@ -14,11 +14,13 @@ module.exports = (app) => {
         //     return '/' + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePathNew];
         // }
 
-        if(filePath[0]=='j'){
-            var filePathNew = filePath.substr(3);
-            return '/' + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePathNew];
-        }
+        // if(filePath[0]=='j'){
+        //     var filePathNew = filePath.substr(3);
+        //     console.log('/' + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePathNew]);
+        //     return '/' + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePathNew];
+        // }
 
-        return '/' + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePath];
+        console.log('/' + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePath]);
+        return "/" + JSON.parse(fs.readFileSync(path.join(__dirname, '../public/assets/rev-manifest.json')))[filePath];
     }
 }
