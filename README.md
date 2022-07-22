@@ -1,6 +1,6 @@
 # codeial
 
-A basic Social Media Web Application with features such as Sign Up, Sign In, Profile Page, Add Post, Add Comment, Delete Post, Delete Comment, Add/Remove a friend.
+A basic Social Media Web Application with features such as Sign Up, Sign In, Profile Page, Add Post, Add Comment, Delete Post, Delete Comment, Like Posts and Comments, Flash Messages, Add/Remove a friend, Chatting Engine.
 
 # Steps to run the project :
 Make sure you have node.js , mongoDB , Robo 3T(optional , to visualize the schema) installed on your pc.
